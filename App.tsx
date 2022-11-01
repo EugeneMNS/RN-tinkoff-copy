@@ -1,4 +1,4 @@
-import {AuthProvider} from "./app/providers/authProvider";
+import {AuthProvider} from "./app/providers/AuthProvider";
 import Navigation from "./app/navigation/Navigation";
 
 export default function App() {
