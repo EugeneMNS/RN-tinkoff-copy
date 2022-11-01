@@ -3,7 +3,7 @@ import {View, Text} from "react-native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {NavigationContainer} from "@react-navigation/native";
 import {useAuth} from "../hooks/useAuth";
-import Auth from "../componets/screens/auth/auth";
+import Auth from "../componets/screens/auth/Auth";
 import Payments from "../componets/screens/payments/Payments";
 import Home from "../componets/screens/home/Home";
 import Services from "../componets/screens/services/Services";
@@ -21,7 +21,7 @@ const Navigation: FC =()=>{
                 {user ? (
                     <>
                         <Stack.Screen name="Home" component={Home}/>
-                        <Stack.Screen name="Home" component={Profile}/>
+                        <Stack.Screen name="Profile" component={Profile}/>
                         <Stack.Screen name="Payments" component={Payments}/>
                         <Stack.Screen name="Services" component={Services}/>
                         <Stack.Screen name="Support" component={Support}/>
