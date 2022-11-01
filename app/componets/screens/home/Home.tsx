@@ -1,11 +1,14 @@
 import React, {FC} from "react";
 import {View, Text} from "react-native";
+import Header from "./Header";
+import Layout from "../../layouts/Layout";
 
 const Home : FC = () => {
     return(
-        <View>
+        <Layout>
+            <Header />
             <Text>Home</Text>
-        </View>
+        </Layout>
     )
 }
 
