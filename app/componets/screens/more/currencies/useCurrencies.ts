@@ -17,15 +17,15 @@ export const useCurrencies = () => {
 				setCurrencies([
 					{
 						name: 'USD',
-						value: (1 / result.data.USD).toFixed(2),
+						value: (1 / result.data.USD.value).toFixed(3),
 					},
 					{
 						name: 'EUR',
-						value: (1 / result.data.EUR).toFixed(2),
+						value: (1 / result.data.EUR.value).toFixed(3),
 					},
 					{
 						name: 'GBP',
-						value: (1 / result.data.GBP).toFixed(2),
+						value: (1 / result.data.GBP.value).toFixed(3),
 					},
 				])
 			} catch (error: any) {
