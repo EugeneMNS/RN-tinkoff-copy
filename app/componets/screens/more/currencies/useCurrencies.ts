@@ -11,7 +11,7 @@ export const useCurrencies = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch(`${URL}&base_currency=RUB`)
+				const response = await fetch(`${URL}&base_currency=BYN`)
 				const result = await response.json()
 
 				setCurrencies([
