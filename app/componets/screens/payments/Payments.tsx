@@ -1,12 +1,18 @@
-import React, {FC} from "react";
-import {View, Text} from "react-native";
+import React, { FC } from 'react'
+import Layout from "../../layouts/Layout";
+import Heading from '../../ui/Heading'
+import Contacts from './contacts/Contacts'
+import Other from './other/Other'
 
-const Payments : FC = () => {
-    return(
-        <View>
-            <Text>Payments</Text>
-        </View>
-    )
+
+const Payments: FC = () => {
+	return (
+		<Layout>
+			<Heading text='Payment' />
+			<Contacts />
+			<Other />
+		</Layout>
+	)
 }
 
 export default Payments
