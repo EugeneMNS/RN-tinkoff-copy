@@ -46,7 +46,7 @@ const ApplyNewProduct: FC = () => {
 				name: cardType,
 			})
 		} catch (error: any) {
-			Alert.alert('Error apply new product', error)
+			Alert.alert('Error apply new product', error.message)
 		}
 	}
 

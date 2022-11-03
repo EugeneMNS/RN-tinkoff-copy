@@ -57,7 +57,7 @@ export const handleTransfer = async (
 
 			return
 		} catch (error: any) {
-			Alert.alert('Error transfer', error)
+			Alert.alert('Error transfer', error.message)
 		}
 	})
 }
