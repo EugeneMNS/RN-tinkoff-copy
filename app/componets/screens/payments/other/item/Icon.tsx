@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import tw from 'tailwind-rn'
 
-import { IFooterItem } from '../../../../layout/footer/types'
+import { IFooterItem } from '../../../../layouts/footer/types'
 
 interface IIcon extends Pick<IFooterItem, 'iconName'> {}
 
